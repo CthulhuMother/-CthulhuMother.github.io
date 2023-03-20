@@ -1,0 +1,23 @@
+.button__header {
+    border: none;
+    padding: 16px 33px 16px 33px;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 17px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+
+    background: #00769C;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.button__header:hover{
+    background: #005774;
+}
+
+.button__header:active{
+    background: #004961;
+}
