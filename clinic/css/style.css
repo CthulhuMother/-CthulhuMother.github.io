@@ -319,7 +319,7 @@
     margin-right: 66px;
 }
 .footer-item{
-    min-width: 286px;
+    min-width: auto;
 }
 
 .footer__information{
