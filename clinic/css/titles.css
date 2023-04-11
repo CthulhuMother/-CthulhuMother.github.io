@@ -13,7 +13,6 @@ p {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
-    text-align: center;
     color: #000000;
 }
 
@@ -31,7 +30,6 @@ h3{
     font-weight: 400;
     font-size: 24px;
     line-height: 25px;
-    text-align: center;
     color: #000000;
 
 }
@@ -88,3 +86,9 @@ h6 {
     text-align: left;
     margin-top: 35px;
 }
+
+@media (max-width:624px){
+    h1{
+        font-size: 24px;
+    }
+}   

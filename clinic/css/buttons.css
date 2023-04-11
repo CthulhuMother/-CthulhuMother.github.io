@@ -1,4 +1,4 @@
-.button__header {
+.btn{
     border: none;
     padding: 16px 33px 16px 33px;
     font-family: 'Futura PT';
@@ -14,10 +14,10 @@
     transition: 0.3s all;
 }
 
-.button__header:hover{
+.btn:hover{
     background: #005774;
 }
 
-.button__header:active{
+.btn:active{
     background: #004961;
 }

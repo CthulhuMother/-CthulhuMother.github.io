@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Futura PT book';
+    font-family: 'Futura PT Book';
 }
 
 .container {
@@ -145,6 +145,7 @@
     align-items: center;
     flex-direction: column;
     transition: 0.3s all;
+    text-align: center;
 }
 
 .unit-item__content:hover{
@@ -305,6 +306,11 @@
     margin-left: 20px;
 }
 
+.footer-link{
+    text-decoration: none;
+    cursor:pointer;
+}
+
 .footer{
     background-color: #E7F1FF;
     padding: 73px 0 75px 0;
@@ -323,7 +329,7 @@
 }
 
 .footer__information{
-    margin-right: 73px;
+    margin-right: 67px;
 }
 
 .footer__more{
@@ -445,8 +451,6 @@
         border: none;
         padding: 13px 10px 13px 10px;
     }
-
-
 }
 
 @media (max-width:910px) {
@@ -514,7 +518,8 @@
 
     .footer-item {
         margin-right: auto;
-        min-width: 286px;
+        min-width: 217px;
+        margin-top: 15px;
     }
 
 }
@@ -626,7 +631,7 @@
     }
 
 }
-@media (max-width:320px){
+@media (max-width:420px){
     h1 {
         font-size: 18px;
     }
@@ -663,6 +668,8 @@
     h3 {
         font-size: 14px;
     }
+    
+
     .unit-item__content p {
         font-size: 12px;
         margin-top: 3px;
