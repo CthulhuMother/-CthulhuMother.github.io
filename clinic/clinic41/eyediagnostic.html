@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Поликлиника №41</title>
+    <title>Офтальмологическое отделение</title>
+
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="../fonts/fonts/futura/stylesheet.css">
     <link rel="stylesheet" href="../fonts/fonts/open_sans/stylesheet.css">
@@ -12,11 +13,10 @@
     <link rel="stylesheet" href="../css/titles.min.css">
     <link rel="stylesheet" href="../css/header.min.css">
     <link rel="stylesheet" href="../css/footerclinic.css">
-    <link rel="stylesheet" href="../css/slider.css">
     <link rel="stylesheet" href="../css/information.min.css">
     <link rel="stylesheet" href="../css/navigation.min.css">
-    <link rel="stylesheet" href="clinic41.css">
-    
+    <link rel="stylesheet" href="../css/unitinfo.min.css">
+    <link rel="stylesheet" href="../css/destination.min.css">
 
 </head>
 <body>
@@ -56,9 +56,9 @@
     <section class="navigation">
         <div class="container">
             <ul class="navigation__wrapper">
-                <a href="../index.html" class="navigation__link"><li class="navigation-item">
-                    Главная
-                </li></a>
+                <li class="navigation-item">
+                    <a href="../index.html" class="navigation__link">Главная</a>
+                </li>
                 <li class="navigation-item">
                     <a href="clinic41.html" class="navigation__link">Отделения</a>
                 </li>
@@ -77,8 +77,8 @@
                         <a href="nevrology.html" class="navigation-item_link">Неврология</a>
                         <a href="rinodiagnostic.html" class="navigation-item_link">Оториноларингология</a>
                         <a href="eyediagnostic.html" class="navigation-item_link">Офтальмология</a>
-                        <a href="prevention" class="navigation-item_link">Профилактика для взрослых</a>
-                        <a href="./fundiagnostic.html" class="navigation-item_link">Функциональная диагностика</a>
+                        <a href="prevention.html" class="navigation-item_link">Профилактика для взрослых</a>
+                        <a href="fundiagnostic.html" class="navigation-item_link">Функциональная диагностика</a>
                         <a href="surgical.html" class="navigation-item_link">Хирургия</a>
                     </div>
                     <p class="navigation__link">Информация <img src="../icons/down.svg" alt="down"> </p>
@@ -90,135 +90,113 @@
             <img src="../icons/close_FILL0_wght400_GRAD0_opsz48 (3).svg" alt="close" class="nav_close">
         </div>
     </section>
+
+    <section class="destination">
+        <div class="container">
+            <nav aria-label="Breadcrumb" class="breadcrumb">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Городская поликлиника &#8470;&nbsp;41</a></li>
+                    <li><span aria-current="page">Офтальмологическое отделение</span></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section class="block">
+        <div class="container">
+            <div class="block__wrapper">
+                <div class="block__info">
+                    <div class="block__unit">
+                        <h1>Офтальмологическое отделение</h1>
+                        <p>Офтальмология&nbsp;&mdash; область медицины, специализирующаяся на&nbsp;структуре, функции и&nbsp;болезни глаз и&nbsp;прилежащих структур. Включает хирургические и&nbsp;медикаментозные методы лечения болезней глаза и&nbsp;исправления дефектов зрения.</p>
+                        <button class="btn">ЗАПИСАТЬСЯ НА&nbsp;ПРИЕМ</button>
+                        <p class="warning">*Запись только по направлению врача</p>
+                    </div>
     
-    <section class="promo">
-        <div class="container">
-            <div class="promo__info">
-                <h1 class="promo__title">Городская поликлиника &#8470;&nbsp;41</h1>
-                <p class="promo__text">Мы&nbsp;многопрофильные и&nbsp;специализированные лечебно-профилактические учреждения для оказания амбулаторной медицинской помощи больным на&nbsp;приёме и&nbsp;на&nbsp;дому.</p>
-                
-            </div>
-        </div>
-    </section>
-
-    <section class="department">
-        <div class="container">
-            <h2>Отделения поликлиники</h2>
-                <div class="department__wrapper">
-                    <div class="department-units">
-                        <a href="" class="dep-link">
-                            <h3 class="dep">Терапевтическое отделение</h3>
-                        </a>
-                        <div class="line-dep"></div>
-                        <a href="retreatment.html" class="dep-link">
-                            <h3 class="dep">Восстановительное лечение</h3>
-                        </a>
-                        <div class="line-dep"></div>
-                        <a href="geriatrics.html" class="dep-link">
-                            <h3 class="dep">Гериартрическое отделение</h3>
-                        </a>
-                        <div class="line-dep"></div>
-                        <a href="dayhospital.html" class="dep-link">
-                            <h3 class="dep">Дневной стационар</h3>
-                        </a>
-                        <div class="line-dep"></div>
-                        <a href="cardio.html" class="dep-link">
-                            <h3 class="dep">Кардиоревматологическое отделение</h3>
-                        </a>
-                        <div class="line-dep"></div>
-                        <a href="radiodiagnosis.html" class="dep-link">
-                            <h3 class="dep">Лучевая диагностика</h3>
-                        </a>
-                        <div class="line-dep"></div>
-                        <a href="urgentcare.html" class="dep-link">
-                            <h3 class="dep">Неотложная медицинская помощь</h3>
-                        </a>
-                        <div class="line-dep"></div>
+                    <div class="block__documents">
+                        <p>Для осмотра необходимы:предварительная запись;
+                            полис ОМС; документ, удостоверяющий личность, 
+                            и&nbsp;СНИЛС</p>
                     </div>
-
-                    <div class="department-units">
-                        <a href="nevrology.html" class="dep-link">
-                            <h3 class="dep">Неврологическое отделение</h3>
-                        </a>
-                        <div class="line-dep"></div>
-                        <a href="rinodiagnostic.html" class="dep-link">
-                            <h3 class="dep">Оториноларингологическое отделение</h3>
-                        </a>
-                        <div class="line-dep"></div>
-                        <a href="eyediagnostic.html" class="dep-link">
-                            <h3 class="dep">Офтальмологическое отделение</h3>
-                        </a>
-                        <div class="line-dep"></div>
-                        <a href="prevention.html" class="dep-link">
-                            <h3 class="dep">Профилактика для взрослых</h3>
-                        </a>
-                        <div class="line-dep"></div>
-                        <a href="fundiagnostic.html" class="dep-link">
-                            <h3 class="dep">Функциональная диагностика</h3>
-                        </a>
-                        <div class="line-dep"></div>
-                        <a href="surgical.html" class="dep-link">
-                            <h3 class="dep">Хирургическое отделение</h3>
-                        </a>
-                        <div class="line-dep"></div>
-                    </div>
-                </div>
-        </div>
-    </section>
-
-    <section class="paid">
-        <div class="container">
-            <div class="paid__info">
-                <h2 class="paid__title">Платные услуги</h2>
-                <p class="paid__text">Восстановительная медицина&nbsp;&mdash; это восстановление и&nbsp;сохранение здоровья здоровых и&nbsp;практически здоровых людей. Это реабилитация больных и&nbsp;инвалидов. Это повышение эффективности курса лечения.</p>
-                <button class="paid__button btn">ЗАПИСЬ НА&nbsp;ПЛАТНЫЕ УСЛУГИ</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="slider slider_white">
-        <div class="container">
-            <h2>Новости поликлиники</h2>
-            <div class="slideshow">
-                <div>
-                    <div class="wrapper__slider">            
-                        <img src="../img/bug.png" alt="bug" class="slider__photo">
-                       
-                        <div class="slider__text slider__text_blue">                    
-                            <h3>Как защититься от&nbsp;укусов клещей?</h3>
-                            <p>Летняя пора&nbsp;&mdash; период загородного отдыха, дач, походов в&nbsp;лес. Именно там велика вероятность встретиться с&nbsp;клещами. 
-                                Обезопасить себя и&nbsp;избежать их&nbsp;укусов 
-                                вам помогут простые правила...</p>
-                               <a href="#" class="next__level">
-                                <div class="more">                            
-                                    <p class="more__info">Читать полностью</p>
-                                    <img src="../icons/Arrow 4.svg" alt="next" class="next">
+    
+                    <div class="block__mode">
+                        <h2>Режим работы вашего отделения</h2>
+                        <div class="time">
+                            <div class="schedule">
+                                <div class="day">
+                                    <p>ПН</p>
+                                    <p>ВТ</p>
+                                    <p>СР</p>
                                 </div>
-                                </a>
-
-                            <h4 class="data">1&nbsp;августа, 2022</h4>
-                         </div>
+                                <div class="time1">
+                                    <p>15:30&nbsp;&mdash; 20:00</p>
+                                    <p>08:00&nbsp;&mdash; 13:30</p>
+                                    <p>15:30&nbsp;&mdash; 20:00</p>
+                                </div>
+                                
+                            </div>
+                            <div class="schedule">
+                                <div class="day">
+                                    <p>ЧТ</p>
+                                    <p>ПТ</p>
+                                    <p>СБ-ВС</p>
+                                </div>
+                                <div class="time1">
+                                <p>08:00&nbsp;&mdash; 13:30</p>
+                                <p>15:30&nbsp;&mdash; 20:00</p>
+                                <p>9:00&minus; 15:00</p>
+                                </div>   
+                            </div>
+                            
+                        </div>
+    
                     </div>
+                    <div class="block__workers">
+                        <h2>Руководители отделения</h2>
+                        <p>Предварительная запись в&nbsp;отделение дневного стационара осуществляется через регистратуру, по&nbsp;телефону регистратуры или интернет-ресурс. С&nbsp;подробным расписанием интересующих врачей можно ознакомиться, перейдя по&nbsp;<a href="#">ссылке</a></p>
+                        <div class="workers_info">
+                            <div class="workers-photo">
+                                <img src="clinic_img/Воробьева.png" alt="Воробьева Елена Юрьевна">
+                                <div class="workers-status">
+                                   <h3>Воробьева Елена Юрьевна</h3>
+                                   <p>Заведующая отделения</p> 
+                                </div>
+                            </div>
+                            <div class="workers-photo">
+                                <img src="clinic_img/Исакова.png" alt="Исакова Марина Михайловна">
+                                <div class="workers-status">
+                                    <h3>Исакова Марина Михайловна</h3>
+                                    <p>Старшая мед.сестра <br>отделения</p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-
-                <div>
-                    <div class="wrapper__slider">            
-                        <img src="../img/bug.png" alt="bug" class="slider__photo">
-                       
-                        <div class="slider__text">                    
-                            <h3>Как защититься от&nbsp;укусов клещей?</h3>
-                            <p>Летняя пора&nbsp;&mdash; период загородного отдыха, дач, походов в&nbsp;лес. Именно там велика вероятность встретиться с&nbsp;клещами. 
-                                Обезопасить себя и&nbsp;избежать их&nbsp;укусов 
-                                вам помогут простые правила...</p>
-                               
-                                <a href="#" class="next__level">
-                                    <div class="more">                            
-                                        <p class="more__info">Читать полностью</p>
-                                        <img src="../icons/Arrow 4.svg" alt="next" class="next">
-                                    </div>
-                                </a>
-                            <h4 class="data">1&nbsp;августа, 2022</h4>
-                         </div>
+                <div class="block__menu">
+                    <div class="block__addition">
+                        <h3>Отделения</h3>
+                        <a href="#" class="add-link"><p>Терапевтическое</p></a>
+                        <a href="retreatment.html" class="add-link"><p>Восстановительное лечение</p></a>
+                        <a href="geriatrics.html" class="add-link"><p>Гериартрическое</p></a>
+                        <a href="dayhospital.html" class="add-link"><p>Дневной стационар</p></a>
+                        <a href="urgentcare.html" class="add-link"><p>Неотложная мед.помощь</p></a>
+                        <a href="cardio.html" class="add-link"><p>Кардиоревматологическое</p></a>
+                        <a href="radiodiagnosis" class="add-link"><p>Лучевая диагностика</p></a>
+                        <a href="nevrology.html" class="add-link"><p>Неврологическое</p></a>
+                        <a href="rinodiagnostic.html" class="add-link"><p>Оториноларингологическое</p></a>
+                        <a href="eyediagnostic.html" class="add-link"><p>Офтальмологическое</p></a>
+                        <a href="prevention.html" class="add-link"><p>Профилактика для взрослых</p></a>
+                        <a href="fundiagnostic.html" class="add-link"><p>Функциональная диагностика</p></a>
+                        <a href="surgical.html" class="add-link"><p>Хирургическое</p></a>
+                    </div>
+                    <div class="block__doc">
+                        <p>Для осмотра необходимы:
+                            предварительная запись;
+                            полис ОМС; документ, 
+                            удостоверяющий личность, 
+                            и&nbsp;СНИЛС</p>
                     </div>
                 </div>
             </div>
@@ -227,7 +205,7 @@
 
     <section class="about">
         <div class="container">
-            <h2>Важная информация</h2>
+            <h2>Полезная общественная информация</h2>
             <div class="about__wrapper">
                 <div class="about_links">
                     <img src="../img/my_health.png" alt="health" class="health">
@@ -241,35 +219,6 @@
                 </div>  
             </div>
         </div>
-    </section>
-
-    <section class="map">
-        <div class="map__info">
-            <div class="map__item">
-                <p class="map__line">Адрес</p>
-                <p>пр.Науки, д.71, корп.2</p>
-            </div>
-            <div class="map__item">
-                <p class="map__line">Режим работы</p>
-                <p>ПН-ПТ: с&nbsp;8:00 до&nbsp;20:00</p>
-                <p>СБ: с&nbsp;9:00 до&nbsp;15:00</p>
-            </div>
-            <div class="map__item">
-                <p class="map__line">Телефоны</p>
-                <p>Единый колл-центр: 8(812) 246-73-18</p>
-                <p>Платные услуги: 8(812) 555-20-21</p>
-                <p>Страховой стол: 8(812) 417-51-93</p>
-            </div>
-            <a href="" class="map__item-link">
-                <div class="map__item">
-                    <p class="map-blue">Посмотреть все контакты</p>
-                </div>
-            </a>
-            
-            
-
-        </div>
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor:7e41173c363555722cfefbaaad564b0891971979b10b40bb176d042ddc8be5ae&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
     </section>
 
     <section class="footer">
@@ -349,10 +298,7 @@
             </div>
     </section>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="../js/slider.js"></script>
+
     <script src="../js/navigation.js"></script>
     
 </body>

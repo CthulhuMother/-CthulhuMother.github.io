@@ -184,6 +184,8 @@
     }
     .footer__ver {
         margin-top: 15px;
+        
+        
     }
     .footer_line {
         margin-top: 20px;
@@ -220,4 +222,13 @@
     .footer__site {
         margin-top: 15px;
     }
+
+    .nav__footer{
+        flex-direction: column
+    }
+    .nav-wrapper{
+        flex-direction: column
+    }
+    
+
 }
