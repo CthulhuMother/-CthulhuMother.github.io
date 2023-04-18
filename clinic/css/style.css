@@ -672,7 +672,7 @@
 
     .unit-item__content p {
         font-size: 12px;
-        margin-top: 3px;
+        margin-top: 0 !important;
     }
     .slider {
         padding: 32px 0 40px;

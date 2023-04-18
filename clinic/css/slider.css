@@ -165,9 +165,6 @@
         object-fit: cover;
     }
 
-    h3 {
-        line-height: 15px;
-    }
 
     .slider__photo {
         height: 113px;
@@ -206,9 +203,6 @@
     .data {
         margin-top: 10px;
     }
-    h2 {
-        font-size: 20px;
-    }
 }
 
 @media (max-width:513px){
@@ -229,15 +223,15 @@
         height: 84px;
     }
     .slider__text {
-        padding: 0px 3px 20px 19px;
+        padding: 0 45px 36px 55px
     }
     .slider__text h3 {
-        margin-top: 15px;
+        margin-top: 16px;
     }
     .slider__text p {
         margin-top: 7px;
-        font-size: 12px;
-        line-height: 11px;
+        font-size: 14px;
+        line-height: 15px;
     }
     .next {
         margin-top: 9px;
