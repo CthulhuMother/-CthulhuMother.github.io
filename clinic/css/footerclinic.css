@@ -24,6 +24,24 @@
 .footer__contacts{
     width:195px
 }
+.footer__text{
+    position: relative;
+    width: fit-content;
+}
+.footer__text::after{
+    content: " ";
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color:black;
+    transition: 0.3s all;
+}
+.footer__text:hover::after{
+    width: 100%;
+}
+
 
 .footer-grey{
     color: #7A7A7A;
