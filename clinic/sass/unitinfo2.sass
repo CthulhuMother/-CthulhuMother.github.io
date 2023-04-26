@@ -48,12 +48,8 @@
             align-items: baseline
             :not(:first-child)
                 margin-top: 10px
-            .schedule
-                display: flex
-                align-items: baseline
-                
-                .day
-                    margin-right: 10px
+            .day
+                margin-right: 10px
                     
     &__workers
         margin-top: 65px
@@ -62,10 +58,9 @@
         .workers_info
             margin-top: 42px
             display: flex
-            justify-content: space-between
-            max-width: 80%
             .workers-photo
                 width: 231px
+                margin-right: 30px
             h3
                 margin-top: 7px
             p
@@ -110,22 +105,24 @@
             margin-bottom: 5px
 
     &__doc
+        box-sizing: border-box
         margin-top: 30px
         margin-left: auto
-        max-width: 60%
-        background: #FFFFFF
-        border: 1px dashed #000000
+        max-width: 70%
+        background: #fff
+        border: 1px dashed #000
         border-radius: 10px
-        padding: 35px 22px 35px 20px
+        padding: 19px 29px 35px 45px
 .about
     margin-top: 65px
 
 @media screen and (max-width:1210px)
     .block
-        &__addition
+        &__menu
             display: none
-        &__doc
-            margin-top: 46px
+        &__documents
+            display: block
+            margin-top: 30px
 
 @media screen and (max-width:1200px)
     .workers_info
