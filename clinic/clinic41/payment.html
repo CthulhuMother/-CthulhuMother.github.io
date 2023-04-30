@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Функциональная диагностика</title>
+    <title>Платные услуги</title>
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="../fonts/fonts/futura/stylesheet.css">
@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../css/unitinfo.min.css">
     <link rel="stylesheet" href="../css/titles.min.css">
     <link rel="stylesheet" href="../css/destination.min.css">
+
 
 </head>
 <body>
@@ -109,9 +110,8 @@
             <nav aria-label="Breadcrumb" class="breadcrumb">
                 <ul>
                     <li><a href="../index.html">СПБ ГБУЗ &#8470;&nbsp;112</a></li>
-                    <li><a href="#">Городская поликлиника &#8470;&nbsp;41</a></li>
-                    <li><a href="#">Отделения</a></li>
-                    <li><span aria-current="page">Функциональная диагностика</span></li>
+                    <li><a href="clinic41.html">Городская поликлиника &#8470;&nbsp;41</a></li>
+                    <li><span aria-current="page">Платные услуги</span></li>
                 </ul>
             </nav>
         </div>
@@ -122,9 +122,11 @@
             <div class="block__wrapper">
                 <div class="block__info">
                     <div class="block__unit">
-                        <h1>Функциональная диагностика</h1>
-                        <p>Функциональная диагностика&nbsp;&mdash; это раздел диагностики, содержанием которого являются объективная оценка, обнаружение отклонений и&nbsp;установление степени нарушений функции различных органов и&nbsp;физиологических систем организма на&nbsp;основе измерения физических, химических или иных объективных показателей их&nbsp;деятельности с&nbsp;помощью инструментальных или лабораторных методов исследования.</p>
-                        <button class="btn">ЗАПИСАТЬСЯ НА&nbsp;ПРИЕМ</button>
+                        <h1>Платные услуги</h1>
+                        <p>Текст для примера: восстановительная медицина&nbsp;&mdash; это восстановление и&nbsp;сохранение здоровья здоровых и&nbsp;практически здоровых людей. Это реабилитация больных 
+                            и&nbsp;инвалидов. Это повышение эффективности курса лечения. Это повышение иммунитета. 
+                            Это эффективная профилактика заболеваний. И&nbsp;это улучшение качества Вашей жизни!</p>
+                        <button class="btn">ЗАПИСАТЬСЯ НА&nbsp;ПЛАТНЫЙ ПРИЕМ</button>
                         <p class="warning">*Запись только по направлению врача</p>
                     </div>
     
@@ -135,70 +137,181 @@
                     </div>
     
                     <div class="block__mode">
-                        <h2>Режим работы вашего отделения</h2>
-                        <div class="time">
-                            <div class="day">
-                                <p>ПН</p>
-                                <p>ВТ</p>
-                                <p>СР</p>
-                            </div>
-                            <div class="time1">
-                                <p>15:30&nbsp;&mdash; 20:00</p>
-                                <p>08:00&nbsp;&mdash; 13:30</p>
-                                <p>15:30&nbsp;&mdash; 20:00</p>
-                            </div>  
-                        </div>
-    
-                    </div>
-                    <div class="block__workers">
-                        <h2>Руководители отделения</h2>
-                        <p>Предварительная запись в&nbsp;отделение функциональной диагностики осуществляется через регистратуру, по&nbsp;телефону регистратуры или интернет-ресурс. С&nbsp;подробным расписанием интересующих врачей можно ознакомиться, перейдя по&nbsp;<a href="#">ссылке</a></p>
-                        <div class="workers_info">
-                            <div class="workers-photo">
-                                <img src="clinic_img/Шлаганова.png" alt="Шлаганова Галина">
-                                <div class="workers-status">
-                                   <h3>Шлаганова Галина Михайловна</h3>
-                                   <p>Заведующая отделения</p> 
-                                </div>
-                            </div>
-                            <div class="workers-photo">
-                                <img src="clinic_img/Смирнова.png" alt="Смирнова Екатерина">
-                                <div class="workers-status">
-                                    <h3>Смирнова Екатерина Станиславовна</h3>
-                                    <p>Старшая медицинская сестра <br>отделения</p> 
+                        <h2>Выберите направление</h2>
+                        <div class="define__direction">
+                            <div class="define-direction">
+                                <p>Для того, чтобы вывести прейскурант на&nbsp;услуги выберите направление</p>
+                                <div class="wrapper-input">
+                                    <div class="input_direction">
+                                        <Input list="directions" name="direction" id="direction" class="selection__value" placeholder="Введите направление, или выберите из&nbsp;списка:">
+                                        <datalist id="directions">
+                                        <option value="Функциональная диагностика" data-direction="1">
+                                        <option value="Акушерство и гинекология" data-direction="2">
+                                        <option value="Клиническая лабораторная диагностика" data-direction="3">
+                                    </div>
+                                    <img src="../icons/close_FILL0_wght400_GRAD0_opsz48 (3).svg" alt="delete" class="clean">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="block__more">
-                        <h2>Важная информация</h2>
-                        <p>3&nbsp;терапевтическое отделение оказывает первичную медико-санитарную помощь прикрепленному населению. В&nbsp;состав отделения включены 9&nbsp;терапевтических участков и&nbsp;2&nbsp;участка врачей общей практики. Оказание медицинской помощи проходит как в&nbsp;рамках амбулаторного приема, так и&nbsp;на&nbsp;дому. По&nbsp;субботам и&nbsp;воскресеньям организованы дежурные врачебно-сестринские бригады.</p>
-                    </div>
+                    
+                    <div class="block__price">
+                        <div class="prices">
+                            <h2>Услуги и&nbsp;стоимость</h2>
+                            <div class="price_wrapper active_price" data-price="1">
+                                <h3>Функциональная диагностика</h3>
+                                <div class="allprices">
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Регистрация электрокардиограммы, расшифровка, описание и&nbsp;интерпретация электрокардиографических данных</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.10.006</h4>
+                                        </div>
+                                        <div class="cost"><h3>800₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Регистрация электрокардиограммы при выезде на&nbsp;дом, расшифровка, описание и&nbsp;интерпретация электрокардиографических данных при выезде на&nbsp;дом</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.10.006.002</h4>
+                                        </div>
+                                        <div class="cost"><h3>900₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Регистрация соматосенсорных вызванных потенциалов коры головного мозга с&nbsp;двух сторон</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.23.005</h4>
+                                        </div>
+                                        <div class="cost"><h3>2000₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Регистрация вызванных потенциалов коры головного мозга одной модальности (зрительные или акустические или когнитивные или стволовые) с&nbsp;двух сторон</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.23.005.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>2000₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Электроэнцефалограмма с&nbsp;пробами на&nbsp;ГВ и&nbsp;ФС</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.23.001.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>2200₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="price_wrapper active_price" data-price="2">
+                                <h3>Акушерство и гинекология</h3>
+                                <div class="allprices">
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Регистрация электрокардиограммы, расшифровка, описание и&nbsp;интерпретация электрокардиографических данных</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.10.006</h4>
+                                        </div>
+                                        <div class="cost"><h3>800₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Регистрация электрокардиограммы при выезде на&nbsp;дом, расшифровка, описание и&nbsp;интерпретация электрокардиографических данных при выезде на&nbsp;дом</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.10.006.002</h4>
+                                        </div>
+                                        <div class="cost"><h3>900₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Регистрация соматосенсорных вызванных потенциалов коры головного мозга с&nbsp;двух сторон</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.23.005</h4>
+                                        </div>
+                                        <div class="cost"><h3>2000₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Регистрация вызванных потенциалов коры головного мозга одной модальности (зрительные или акустические или когнитивные или стволовые) с&nbsp;двух сторон</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.23.005.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>2000₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Электроэнцефалограмма с&nbsp;пробами на&nbsp;ГВ и&nbsp;ФС</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.23.001.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>2200₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="price_wrapper active_price" data-price="3">
+                                <h3>Клиническая лабораторная диагностика</h3>
+                                <div class="allprices">
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Регистрация электрокардиограммы, расшифровка, описание и&nbsp;интерпретация электрокардиографических данных</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.10.006</h4>
+                                        </div>
+                                        <div class="cost"><h3>800₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Регистрация электрокардиограммы при выезде на&nbsp;дом, расшифровка, описание и&nbsp;интерпретация электрокардиографических данных при выезде на&nbsp;дом</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.10.006.002</h4>
+                                        </div>
+                                        <div class="cost"><h3>900₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Регистрация соматосенсорных вызванных потенциалов коры головного мозга с&nbsp;двух сторон</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.23.005</h4>
+                                        </div>
+                                        <div class="cost"><h3>2000₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Регистрация вызванных потенциалов коры головного мозга одной модальности (зрительные или акустические или когнитивные или стволовые) с&nbsp;двух сторон</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.23.005.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>2000₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Электроэнцефалограмма с&nbsp;пробами на&nbsp;ГВ и&nbsp;ФС</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.23.001.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>2200₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
                 <div class="block__menu">
-                    <div class="block__addition">
-                        <h3>Отделения</h3>
-                        <a href="therapy.html" class="add-link"><p>Терапевтическое</p></a>
-                        <a href="retreatment.html" class="add-link"><p>Восстановительное лечение</p></a>
-                        <a href="geriatrics.html" class="add-link"><p>Гериартрическое</p></a>
-                        <a href="dayhospital.html" class="add-link"><p>Дневной стационар</p></a>
-                        <a href="cardio.html" class="add-link"><p>Кардиоревматологическое</p></a>
-                        <a href="radiodiagnosis" class="add-link"><p>Лучевая диагностика</p></a>
-                        <a href="nevrology.html" class="add-link"><p>Неврологическое</p></a>
-                        <a href="rinodiagnostic.html" class="add-link"><p>Оториноларингологическое</p></a>
-                        <a href="eyediagnostic.html" class="add-link"><p>Офтальмологическое</p></a>
-                        <a href="prevention.html" class="add-link"><p>Профилактика для взрослых</p></a>
-                        <a href="fundiagnostic.html" class="add-link"><p><b>Функциональная диагностика</b></p></a>
-                        <a href="surgical.html" class="add-link"><p>Хирургическое</p></a>
-                    </div>
-                    <div class="block__doc">
+                    <div class="block__doc fix">
                         <p>Для осмотра необходимы:
                             предварительная запись;
                             полис ОМС; документ, 
                             удостоверяющий личность, 
                             и&nbsp;СНИЛС</p>
                     </div>
-                </div>
+                </div>  
             </div>
         </div>
     </section>
@@ -299,6 +412,6 @@
 
 
     <script src="../js/navigation.js"></script>
-    
+    <script src="../js/pricemenu.js"></script>
 </body>
 </html>

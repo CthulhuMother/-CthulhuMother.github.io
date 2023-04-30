@@ -26,6 +26,7 @@
             display: none
         
     &__documents
+        position: relative
         display: none
         width: 260px
         background: #FFFFFF
@@ -127,10 +128,10 @@
     &-adres
         width: 70%
         input
-            border: 0.5 solid #000000
+            border: 1px solid #000000
             border-radius: 10px
             width: 116%
-            padding: 6px
+            padding: 8px
             font-size: 18px
             margin-top: 9px
     &-choice
@@ -138,7 +139,7 @@
         input
             border: 1px dashed #000000
             border-radius: 10px
-            padding: 6px
+            padding: 8px
             font-size: 18px
             text-align: center
             width: 100%
@@ -161,6 +162,65 @@
     visibility: visible
     position: relative
     opacity: 1
+
+
+
+//Цены
+
+.price_wrapper
+    h3
+        margin-top: 30px
+.prices
+    position: relative
+    h2
+        margin-top: 60px
+.line-price
+    border: 1px solid #000000
+    margin-top: 11px
+    margin-bottom: 11px
+.price
+    display: flex
+    justify-content: space-between
+    .name-price
+        width: 80%
+        p
+            line-height: 20px
+        h4
+            margin-top: 5px
+    .cost
+        h3
+            margin-top: 0
+.define__direction
+    display: flex
+    .define-direction
+        width: 100%
+        p
+            margin-top: 20px
+    .wrapper-input
+        display: flex
+        input
+            border: 1px solid #000000
+            border-radius: 10px
+            padding: 8px
+            font-size: 18px
+            margin-top: 20px
+            width: 400px
+        .clean
+            margin-top: 20px
+            margin-left: 5px
+            width: 30px
+            cursor: pointer
+.active-price
+    visibility: hidden
+    position: absolute
+.block__menu
+    position: relative
+
+.fix
+    position: sticky
+    left: 0
+    top: 20px
+    margin-top: 102px
 
 
 
@@ -202,7 +262,8 @@
             p
                 margin-top: 20px
         &__documents
-            width: 222px
+            width: 100%
+            box-sizing: border-box
         &__workers
             .workers_info
                 p

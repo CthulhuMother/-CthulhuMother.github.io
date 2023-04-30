@@ -1,14 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let menu = document.querySelector(".navigation-item_menu"),
-    drop = document.querySelector(".navigation-item__drop");
+    let menu = document.querySelector(".navigation-item_menu");
 
-    menu.addEventListener("mouseover", () => {
-        drop.classList.add("navigation-item__drop_active");
-    });
+    let menus = document.querySelectorAll(".navigation-item_menu");
 
-    menu.addEventListener("mouseout", () => {
-        drop.classList.remove("navigation-item__drop_active");
-    });
+    menus.forEach(el => {
+        let drop = el.querySelector(".navigation-item__drop");
+
+        el.addEventListener("mouseover", () => {
+            drop.classList.add("navigation-item__drop_active");
+        })
+
+        el.addEventListener("mouseout", () => {
+            drop.classList.remove("navigation-item__drop_active");
+        });
+    })
+
 
     let burger = document.querySelector(".header__burger"),
     mobile_menu = document.querySelector(".navigation");

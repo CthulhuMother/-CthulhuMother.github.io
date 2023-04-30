@@ -18,3 +18,8 @@ button.addEventListener("click", () => {
         }
     }
 })
+tmp.addEventListener("click", () => {
+    if(tmp.value != ""){
+        tmp.value = "";
+    }
+})
