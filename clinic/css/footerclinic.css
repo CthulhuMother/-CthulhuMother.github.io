@@ -195,15 +195,25 @@
         padding: 30px 0 30px 0;
     }
     h6 {
-        margin-bottom: 10px;
+        margin-bottom: 25px;
     }
     .footer__contacts {
         margin-top: 20px;
     }
     .footer__ver {
         margin-top: 15px;
-        
-        
+    }
+    .footer__text{  
+       margin-bottom: 15px; 
+    }
+    .nav__info{
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+
+    .footer__num{
+        margin-top: 3px;
+        margin-bottom: 15px;
     }
     .footer_line {
         margin-top: 20px;
