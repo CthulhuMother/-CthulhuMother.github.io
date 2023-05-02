@@ -223,7 +223,12 @@
         height: 84px;
     }
     .slider__text {
-        padding: 0 45px 36px 55px
+        padding: 0 45px 36px 55px;
+        background-color:#ffffff;
+    }
+    .slider__text_blue {
+        padding: 0 45px 36px 55px;
+        background-color:#E7F1FF;
     }
     .slider__text h3 {
         margin-top: 16px;
