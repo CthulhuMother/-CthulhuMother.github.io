@@ -40,10 +40,13 @@
 .dep{
     color: #0F7EA2;
     transition: 0.3s all;
+    text-align: left;
+
 }
 
 .dep:hover{
     color: #014459;
+    transform: scale(1.02);
 }
 
 .dep-link{

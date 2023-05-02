@@ -33,12 +33,12 @@
 
 .more__info {
     display: flex;
-    color: #0F7EA2;
+    color: #00769C;
 }
 
 .more__info:hover {
     display: flex;
-    color: #0D6D8C;
+    color: #005774;
 }
 
 
