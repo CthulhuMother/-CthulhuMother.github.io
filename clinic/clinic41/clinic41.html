@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/header.min.css">
     <link rel="stylesheet" href="../css/information.min.css">
     <link rel="stylesheet" href="../css/navigation.min.css">
+    <link rel="stylesheet" href="../css/popup.min.css">
     <link rel="stylesheet" href="../css/titles.min.css">
     <link rel="stylesheet" href="../css/footerclinic.css">
     <link rel="stylesheet" href="clinic41.css">
@@ -35,7 +36,7 @@
         
                 <div class="header__info">
                     <div class="header__button">
-                        <button class="button__header btn">ЗАПИСАТЬСЯ НА&nbsp;ПРИЕМ</button>
+                        <button class="button__header btn free">ЗАПИСАТЬСЯ НА&nbsp;ПРИЕМ</button>
     
                             <div class="visible__version">
                                 <img src="../icons/visible.svg" alt="visible__version" class="visible">
@@ -194,7 +195,7 @@
             <div class="paid__info">
                 <h2 class="paid__title">Платные услуги</h2>
                 <p class="paid__text">Восстановительная медицина&nbsp;&mdash; это восстановление и&nbsp;сохранение здоровья здоровых и&nbsp;практически здоровых людей. Это реабилитация больных и&nbsp;инвалидов. Это повышение эффективности курса лечения.</p>
-                <button class="paid__button btn">ЗАПИСЬ НА&nbsp;ПЛАТНЫЕ УСЛУГИ</button>
+                <button class="paid__button btn notfree">ЗАПИСЬ НА&nbsp;ПЛАТНЫЕ УСЛУГИ</button>
             </div>
         </div>
     </section>
@@ -253,14 +254,14 @@
             <h2>Важная информация</h2>
             <div class="about__wrapper">
                 <div class="about_links">
-                    <img src="../img/my_health.png" alt="health" class="health">
-                    <img src="../img/miats.png" alt="miats" class="mr20">    
+                    <a href="https://mzdorovie.com/lk/login"><img src="../img/my_health.png" alt="health" class="health"></a>
+                    <a href="https://spbmiac.ru"><img src="../img/miats.png" alt="miats" class="mr20"></a>  
                 </div>
 
                 <div class="about_links1">
-                    <img src="../img/grade.png" alt="grade">
-                    <img src="../img/force.png" alt="health">
-                    <img src="../img/family.png" alt="health">
+                    <a href="https://minzdrav.gov.ru/open/supervision/format"><img src="../img/grade.png" alt="grade"></a>
+                    <a href="http://nacionalsoglasie.kmormp.gov.spb.ru"><img src="../img/force.png" alt="health"></a>
+                    <a href="http://cspsid-kalin.spb.ru"><img src="../img/family.png" alt="health"></a>
                 </div>  
             </div>
         </div>
@@ -284,7 +285,7 @@
                     <p>Платные услуги: 8(812) 555-20-21</p>
                     <p>Страховой стол: 8(812) 417-51-93</p>
                 </div>
-                <a href="" class="map__item-link">
+                <a href="infocontacts.html" class="map__item-link">
                     <div class="map__item">
                         <p class="map-blue">Посмотреть все контакты</p>
                     </div>
@@ -294,6 +295,59 @@
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor:7e41173c363555722cfefbaaad564b0891971979b10b40bb176d042ddc8be5ae&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
     </section>
 
+    <section class="popup">
+        <div class="popup__info">
+            <img src="../icons/close_FILL0_wght400_GRAD0_opsz48 (3).svg" alt="" class="closepopup quit">
+            <div class="popup__text">
+                <h2>Как вы&nbsp;хотите записаться на&nbsp;прием?</h2>
+                <p>Выберите способ записи на&nbsp;прием:</p>
+                <div class="popup__buttons">
+                    <button onClick="window.location=''"class="btn btnOMS">ПО&nbsp;ОМС*</button>
+                    <button class="btn btnpay">ПЛАТНЫЙ ПРИЕМ</button>
+                </div>
+                <h4>*Вы&nbsp;будете переведены на&nbsp;сайт, с&nbsp;помощью которого сможете <br>записаться на&nbsp;прием самостоятельно</h4>
+                
+            </div>
+        </div>
+
+        <div class="popup__reg">
+            <img src="../icons/close_FILL0_wght400_GRAD0_opsz48 (3).svg" alt="" class="closepopup1 quit">
+            <div class="popup_reg">
+                <h2>Запись на&nbsp;платный прием</h2>
+                <h3>Оставьте заявку, и&nbsp;мы&nbsp;вам перезвоним:</h3>
+                <form action="" class="popup__form">
+                    <div class="popup-item">
+                        <p>Введите ФИО:</p>
+                        <input type="text" class="popupreg">
+                    </div>
+                    <div class="popup-item">
+                        <p>Номер телефона:</p>
+                        <input type="text" name="mail" class="popupreg">
+                    </div>
+                    <div class="popup-item">
+                        <p>Комментарий:</p>
+                        <textarea name="comment" resizable="false" class="popupreg popup_text"></textarea>
+                    </div>
+                    <div class="popup-item agree-item">
+                        <input type="checkbox" class="agree">
+                        <p>Согласен на&nbsp;обработку персональных данных</p>
+                    </div>
+                    <button class="btn send">ОТПРАВИТЬ ЗАЯВКУ</button>
+                </form>
+                
+            </div>
+        </div>
+        <div class="popup__accept">
+            <img src="../icons/close_FILL0_wght400_GRAD0_opsz48 (3).svg" alt="" class="closepopup3 quit">
+            <div class="popup__text">
+                <h2>Ваша заявка отправлена!</h2>
+                <p>Скоро с&nbsp;вами свяжется наш оператор</p>
+                
+            </div>
+        </div>
+    </section>
+
+  
     <section class="footer">
         <div class="container">
             <div class="footer__wrapper">
@@ -346,11 +400,11 @@
 
             <div class="nav__footer">
                 <div class="nav-wrapper">
-                    <a href="" class="footer-link"><p class="nav__info">Для пациентов</p></a>
-                    <a href="" class="footer-link"><p class="nav__info">Для специалистов</p></a>
-                    <a href="" class="footer-link"><p class="nav__info">Вакансии</p></a>
-                    <a href="" class="footer-link"><p class="nav__info">Отзывы пациентов</p></a>
-                    <a href="" class="footer-link"><p class="nav__info">Новости и статьи</p></a> 
+                    <a href="infopatient" class="footer-link"><p class="nav__info">Для пациентов</p></a>
+                    <a href="infoemployes.html" class="footer-link"><p class="nav__info">Для специалистов</p></a>
+                    <a href="infovacancy.html" class="footer-link"><p class="nav__info">Вакансии</p></a>
+                    <a href="inforeview.html" class="footer-link"><p class="nav__info">Отзывы пациентов</p></a>
+                    <a href="infonews.html" class="footer-link"><p class="nav__info">Новости и статьи</p></a> 
                     
                 </div>
                 
@@ -361,7 +415,7 @@
             </div>
 
             <div class="footer__desc">
-                <h4 class="footer__description">Здесь оставляю место для обязательных текстов для проверяющих органов. Дальше идет текст для заполнения объема: клиники сертифицированы по&nbsp;стандарту ISO 9001:2015. Медицинские услуги имеют противопоказания, необходима консультация специалиста. Система клиник&nbsp;&mdash; член саморегулируемой организации НП&nbsp;&laquo;Медицинская палата СПб&raquo;. При полном или частичном использовании материалов сайта активная (без javascript) гиперссылка на&nbsp;сайт обязательна.</h4>
+                <h4 class="footer__description">СПб ГБУЗ &laquo;Городская поликлиника &#8470;&nbsp;112&raquo; обслуживает 139&nbsp;258 человек взрослого населения, финансируемого из&nbsp;средств фонда обязательного медицинского страхования, гериатрическое отделение, отделение ОХВИ с&nbsp;кабинетами ВИЧ-инфицированных, флюорографическое обследование и&nbsp;районный склад ИБП&nbsp;&mdash; бюджетная служба. Осуществляем медицинскую деятельность на&nbsp;основании лицензии &#8470; ЛО-78-01-011077 от&nbsp;26.08.2020</h4>
 
                 <div class="footer__site">
                     <h4>info@p112.spb.ru</h4>
@@ -375,6 +429,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="../js/slider.js"></script>
     <script src="../js/navigation.js"></script>
+    <script src="../js/correctpopup.js"></script>
     
 </body>
 </html>

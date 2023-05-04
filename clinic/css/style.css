@@ -458,11 +458,13 @@
     .text__adress {
         margin-top: 0px;
         font-size: 15px;
+        color:#FFFFFF;
     }
     .text__number {
         max-width: 196px;
         font-weight: 400;
         font-size: 20px;
+        color:#FFFFFF;
     }
     .number__text2 {
         margin-top: -2px;
@@ -475,6 +477,7 @@
     }
     .text__header {
         margin-left: 23px;
+
     }
 }
 
@@ -482,6 +485,10 @@
     .visible-br{
         display:block;
         line-height: 15px;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -555,6 +562,10 @@
         border-radius: 0 0 10px 10px;
         padding: 0 98px 36px 96px;
     }
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 @media (max-width:642px){
@@ -605,6 +616,10 @@
     h2 {
         font-size: 20px;
     }
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
 
 }
 
@@ -615,6 +630,10 @@
     .about__wrapper {
         grid-template-columns: auto;
     }
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
 }
 @media (max-width:466px){
     .text__number {
@@ -624,8 +643,8 @@
         display: none;
     }
     .logo {
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
     }
     .header {
         padding: 5px 0 5px 0;
@@ -668,6 +687,10 @@
     }
     h3 {
         font-size: 14px;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
     }
     
 

@@ -228,18 +228,7 @@
     .footer__description {
         margin-top: 20px;
     }
-    .about_links1{
-        max-width: 164px;
-    }
-    .about_links{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-    .health{
-        max-width: 50%;
-        height: max-content;
-    }
+
     .footer-item{
         margin-top: 20px;
     }

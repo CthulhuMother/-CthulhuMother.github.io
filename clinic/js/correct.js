@@ -2,7 +2,6 @@ let inputs = document.querySelectorAll(".unit__form .review"),
     corbtn = document.querySelector(".review_btn");
 
 corbtn.addEventListener("click", (e) => {
-    console.log(1);
     e.preventDefault();
 
     inputs.forEach(el => {
@@ -22,3 +21,4 @@ inputs.forEach(el => {
         }
     })
 })
+
