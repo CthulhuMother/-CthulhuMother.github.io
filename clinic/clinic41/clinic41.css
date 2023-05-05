@@ -8,7 +8,7 @@
 
 .promo {
     padding: 53px 0 55px 0;
-    background:url('clinic_img/banner41.png') center center/cover no-repeat;
+    background:url('clinic_img/баннерглавная.png') center center/cover no-repeat;
 }
 
 .promo__text{
@@ -61,7 +61,7 @@
 }
 
 .paid{
-    background:url('clinic_img/doctor.png') center center/cover no-repeat;
+    background:url('clinic_img/баннерплатных.png') center center/cover no-repeat;
 }
 
 .paid__info{

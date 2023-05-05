@@ -150,11 +150,12 @@
 }
 
 .unit-item__content:hover{
-    background: #D3E5FF;
+    background: #AFC5E4;
+
 }
 
 .unit-item__content:active{
-    background: #BFD9FF;
+    background: #93AFD9;
 }
 
 .unit-item__content p {
@@ -315,6 +316,23 @@
 .footer{
     background-color: #E7F1FF;
     padding: 73px 0 75px 0;
+}
+.footer__text{
+    position: relative;
+    width: fit-content;
+}
+.footer__text::after{
+    content: " ";
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color:black;
+    transition: 0.3s all;
+}
+.footer__text:hover::after{
+    width: 100%;
 }
 
 .footer__wrapper{
