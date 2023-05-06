@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="../css/titles.min.css">
     <link rel="stylesheet" href="../css/footerclinic.css">
     <link rel="stylesheet" href="../css/destination.min.css">
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
 
 
 </head>
@@ -27,7 +29,7 @@
                 <div class="header__logo">
                     <a href="../index.html"><img src="../icons/logo.svg" alt="main_logo" class="logo"></a>
                         <div class="text__header">
-                        <div class="text__number">Городская поликлиника &#8470;&nbsp;112</div>
+                        <div class="text__number">Городская поликлиника &#8470;&nbsp;41</div>
                         <div class="text__adress">г. Санкт-Петербург, Калининский район</div>
                         </div>
                 </div>
@@ -36,7 +38,7 @@
                     <div class="header__button">
                         <button class="button__header btn free">ЗАПИСАТЬСЯ НА&nbsp;ПРИЕМ</button>
     
-                            <div class="visible__version">
+                            <div class="visible__version" id="specialButton" style="cursor: pointer;">
                                 <img src="../icons/visible.svg" alt="visible__version" class="visible">
                                 <div class="header__visible">Версия <br class="visible-br"> для слабовидящих</div>
                             </div>
@@ -149,9 +151,9 @@
                                         <datalist id="directions">
                                         <option value="Функциональная диагностика" data-direction="1">
                                         <option value="Акушерство и гинекология" data-direction="2">
-                                        <option value="Клиническая лабораторная диагностика" data-direction="3">
+                                        <option value="Дневной стационар в ЖК 29" data-direction="3">
+                                        <option value="Прием беременных в ЖК 29" data-direction="4">
                                     </div>
-                                    <img src="../icons/close_FILL0_wght400_GRAD0_opsz48 (3).svg" alt="delete" class="clean">
                                 </div>
                             </div>
                         </div>
@@ -204,6 +206,246 @@
                                         <div class="cost"><h3>2200₽</h3></div>
                                     </div>
                                     <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Электронейромиография игольчатыми электродами (одна конечность)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.02.001.011</h4>
+                                        </div>
+                                        <div class="cost"><h3>3000₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Холтеровское мониторирование сердечного ритма (ХМ-ЭКГ)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.10.008.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>2500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Проведение холтеровского исследования (ЭКГ+АД)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp; 05.10.003.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>2700₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Электрокардиография с&nbsp;физическими упражнениями</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp; 12.10.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>900₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Реоэнцефалография</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp; 05.23.002</h4>
+                                        </div>
+                                        <div class="cost"><h3>800₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Исследование неспровоцированных дыхательных объемов и&nbsp;потоков(спирография)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp; 12.09.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>950₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Исследование дыхательных объемов при медикаментозной провокации</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp; 12.09.002</h4>
+                                        </div>
+                                        <div class="cost"><h3>1000₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Электромиография накожная (одна конечность)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp; 05.02.001.002</h4>
+                                        </div>
+                                        <div class="cost"><h3>3000₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Электронейромиография стимуляционная (одна конечность)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp; 05.02.001.003</h4>
+                                        </div>
+                                        <div class="cost"><h3>3000₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Электронейромиография стимуляционная и&nbsp;игольчатая (одна конечность)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; A&nbsp;05.02.001.011&nbsp;А 05.02.001.003</h4>
+                                        </div>
+                                        <div class="cost"><h3>4000₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Ультразвуковое исследование периферических нервов (один нерв)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;04.24.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>2200₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Электронейромиография стимуляционная (один нерв) и&nbsp;Ультразвуковое исследование периферических нервов (один нерв)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.02.001.003&nbsp;А 04.24.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>3200₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Дуплексное сканирование транскраниальное артерий и&nbsp;вен (триплексное)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp; 04.12.018</h4>
+                                        </div>
+                                        <div class="cost"><h3>2200₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Дуплексное сканирование брахиоцефальных артерий с&nbsp;цветным допплеровским картированием кровотока (триплексное)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp; 04.12.005.003</h4>
+                                        </div>
+                                        <div class="cost"><h3>2200₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Дуплексное сканирование транскраниальных артерий и&nbsp;вен с&nbsp;нагрузочными пробами</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp; 04.12.019</h4>
+                                        </div>
+                                        <div class="cost"><h3>2500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Дуплексное сканирование брахиоцефальных артерий с&nbsp;цветным допплеровским картированием кровотока и&nbsp;дуплексное сканирование транскраниальных артерий и&nbsp;вен (триплексное)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А04.12.018 А04.12.005.003</h4>
+                                        </div>
+                                        <div class="cost"><h3>3200₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Триплексное сканирование вен конечностей (ног или рук)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; A&nbsp;04.12.015</h4>
+                                        </div>
+                                        <div class="cost"><h3>2500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Ультразвуковое дуплексное сканирование вен нижних конечностей</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;04.12.002.002</h4>
+                                        </div>
+                                        <div class="cost"><h3>2500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Дуплексное сканирование вен верхних конечностей</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;04.12.005.004</h4>
+                                        </div>
+                                        <div class="cost"><h3>2500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Дуплексное сканирование артерий нижних конечностей </p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А04.12.006.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>2500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Ультразвуковое дуплексное сканирование вен и&nbsp;артерий нижних либо верхних конечностей</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А04.12.006 </h4>
+                                        </div>
+                                        <div class="cost"><h3>3800₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Дуплексное сканирование артерий верхних конечностей</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;04.12.005.002</h4>
+                                        </div>
+                                        <div class="cost"><h3>2500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Эхокардиография</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; A&nbsp;04.10.002</h4>
+                                        </div>
+                                        <div class="cost"><h3>2900₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Дуплексное сканирование артерий почек</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; A&nbsp;04.12.001.002</h4>
+                                        </div>
+                                        <div class="cost"><h3>2500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Дуплексное сканирование аорты </p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; A&nbsp;04.12.003</h4>
+                                        </div>
+                                        <div class="cost"><h3>2500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Дуплексное сканирование сосудов гепатобиллиарной зоны</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; A&nbsp;04.12.014</h4>
+                                        </div>
+                                        <div class="cost"><h3>2500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Дуплексное сканирование сосудов мошонки и&nbsp;полового члена без стоимости препарата &laquo;Каверджект&raquo;</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; A&nbsp;04.12.008</h4>
+                                        </div>
+                                        <div class="cost"><h3>3600₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Дуплексное сканирование сосудов челюстно-лицевой области</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; A&nbsp;04.12.009</h4>
+                                        </div>
+                                        <div class="cost"><h3>2500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Дуплексное сканирование сосудов глаза и&nbsp;орбиты</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;04.26.006</h4>
+                                        </div>
+                                        <div class="cost"><h3>2200₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Нейросонография</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;04.23.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>2000₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
                                 </div>
                             </div>
 
@@ -214,92 +456,366 @@
                                     <div class="line-price"></div>
                                     <div class="price">
                                         <div class="name-price">
-                                            <p>Регистрация электрокардиограммы, расшифровка, описание и&nbsp;интерпретация электрокардиографических данных</p>
-                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.10.006</h4>
+                                            <p>Прием первичный (осмотр, консультация) врача акушера-гинеколога первой, высшей категории, специалиста в области эндокринной гинекологии</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; В01.001.001.</h4>
                                         </div>
-                                        <div class="cost"><h3>800₽</h3></div>
+                                        <div class="cost"><h3>1800₽</h3></div>
                                     </div>
                                     <div class="line-price"></div>
                                     <div class="price">
                                         <div class="name-price">
-                                            <p>Регистрация электрокардиограммы при выезде на&nbsp;дом, расшифровка, описание и&nbsp;интерпретация электрокардиографических данных при выезде на&nbsp;дом</p>
-                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.10.006.002</h4>
+                                            <p>Прием повторный (осмотр, консультация) врача акушера-гинеколога первой, высшей категории, специалиста в области эндокринной гинекологии</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; В01.001.002.</h4>
+                                        </div>
+                                        <div class="cost"><h3>1400₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Прием первичный (осмотр, консультация) врача акушера-гинеколога без категории, второй категории</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; В01.001.001.</h4>
+                                        </div>
+                                        <div class="cost"><h3>1400₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Прием повторный (осмотр, консультация) врача акушера-гинеколога без категории, второй категории</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; В01.001.002.</h4>
+                                        </div>
+                                        <div class="cost"><h3>1050₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Введение внутриматочной спирали (под местной анестезией)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А11.20.014</h4>
+                                        </div>
+                                        <div class="cost"><h3>1950₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Введение внутриматочной спирали (Мирена, Кайлина)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А11.20.014.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>3100₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Удаление внутриматочной спирали(под местной анестезией)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А11.20.015</h4>
+                                        </div>
+                                        <div class="cost"><h3>1950₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Удаление внутриматочной спирали сложное (с использованием крючка)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А11.20.015.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>3250₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Взятие аспирата из полости матки(без стоимости гистологического исследования)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А08.20.004</h4>
+                                        </div>
+                                        <div class="cost"><h3>2600₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Введение исскуственных имплантов в мягкие ткани (Импланон) без стоимости препарата</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А11.01.012</h4>
+                                        </div>
+                                        <div class="cost"><h3>3000₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Удаление исскуственных имплантов в мягкие ткани (Импланон) без стоимости препарата</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А16.30.026.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>2500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Подбор, введение влагалищного поддерживающего пессария</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А14.20.002</h4>
                                         </div>
                                         <div class="cost"><h3>900₽</h3></div>
                                     </div>
                                     <div class="line-price"></div>
                                     <div class="price">
                                         <div class="name-price">
-                                            <p>Регистрация соматосенсорных вызванных потенциалов коры головного мозга с&nbsp;двух сторон</p>
-                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.23.005</h4>
+                                            <p>Удаление влагалищного поддерживающего пессария</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А14.20.002</h4>
                                         </div>
-                                        <div class="cost"><h3>2000₽</h3></div>
+                                        <div class="cost"><h3>500₽</h3></div>
                                     </div>
                                     <div class="line-price"></div>
                                     <div class="price">
                                         <div class="name-price">
-                                            <p>Регистрация вызванных потенциалов коры головного мозга одной модальности (зрительные или акустические или когнитивные или стволовые) с&nbsp;двух сторон</p>
-                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.23.005.001</h4>
+                                            <p>Обработка влагалища лечебными растворами- 1 процедура</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А11.20.012</h4>
                                         </div>
-                                        <div class="cost"><h3>2000₽</h3></div>
+                                        <div class="cost"><h3>400₽</h3></div>
                                     </div>
                                     <div class="line-price"></div>
                                     <div class="price">
                                         <div class="name-price">
-                                            <p>Электроэнцефалограмма с&nbsp;пробами на&nbsp;ГВ и&nbsp;ФС</p>
-                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.23.001.001</h4>
+                                            <p>Кольпоскопия</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А03.20.001</h4>
                                         </div>
-                                        <div class="cost"><h3>2200₽</h3></div>
+                                        <div class="cost"><h3>1350₽</h3></div>
                                     </div>
                                     <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Биопсия шейки матки с помощью щипцов</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А11.20.011</h4>
+                                        </div>
+                                        <div class="cost"><h3>900₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Биопсия шейки матки радиоволновой петлей</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А11.20.011.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>1900₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Электродиатермокоагуляция шейки матки</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А16.20.036.001.003</h4>
+                                        </div>
+                                        <div class="cost"><h3>2800₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Электродиатермоэксцизия шейки матки</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А16.20.036.001.003</h4>
+                                        </div>
+                                        <div class="cost"><h3>5500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Радиоволновая деструкция шейки матки</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А16.20.036.003.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>3500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Радиоволновая эксцизия шейки матки(поражение до 2,0 см в диаметре)без стоимости гистологического исследования</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А16.20.036.003.002</h4>
+                                        </div>
+                                        <div class="cost"><h3>6500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Радиоволновая эксцизия шейки матки(поражение больше 2,0 см в диаметре) без стоимости гистологического исследования</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А16.20.036.003.002</h4>
+                                        </div>
+                                        <div class="cost"><h3>8500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Лазеровапоризация шейки матки (поражение до 2,0 см в диаметре)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А22.20.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>6500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Лазеровапоризация шейки матки (поражение больше 2,0 см в диаметре)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А22.20.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>8500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Удаление доброкачественных образований  промежности, кондилом слизистой до 3 ед.(лазерный, радиоволновой метод)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А16.01.017.004.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>1100₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Удаление доброкачественных образований  промежности, кондилом слизистой от 5 до 10 ед.(лазерный, радиоволновой метод)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А16.01.017.004.002</h4>
+                                        </div>
+                                        <div class="cost"><h3>3900₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Удаление доброкачественных образований  промежности, кондилом слизистой более 10 ед. (лазерный, радиоволновой метод)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А16.01.017.004.003</h4>
+                                        </div>
+                                        <div class="cost"><h3>7000₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Забор вагинального,цервикального,уретрального мазка без стоимости исследования</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А11.20.005.1</h4>
+                                        </div>
+                                        <div class="cost"><h3>250₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Забор вагинального,цервикального,уретрального мазка без стоимости исследования и без приема врача</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А11.20.005.2</h4>
+                                        </div>
+                                        <div class="cost"><h3>500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Кардиотокография плода</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А05.30.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>950₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Цервикометрия</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А04.20.001.002</h4>
+                                        </div>
+                                        <div class="cost"><h3>550₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Фолликулометрия</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А04.20.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>650₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Биопсия шейки матки с помощью щипцов</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А11.20.011</h4>
+                                        </div>
+                                        <div class="cost"><h3>900₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+
                                 </div>
                             </div>
 
 
                             <div class="price_wrapper active_price" data-price="3">
-                                <h3>Клиническая лабораторная диагностика</h3>
+                                <h3>Дневной стационар в ЖК 29</h3>
                                 <div class="allprices">
                                     <div class="line-price"></div>
                                     <div class="price">
                                         <div class="name-price">
-                                            <p>Регистрация электрокардиограммы, расшифровка, описание и&nbsp;интерпретация электрокардиографических данных</p>
-                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.10.006</h4>
-                                        </div>
-                                        <div class="cost"><h3>800₽</h3></div>
-                                    </div>
-                                    <div class="line-price"></div>
-                                    <div class="price">
-                                        <div class="name-price">
-                                            <p>Регистрация электрокардиограммы при выезде на&nbsp;дом, расшифровка, описание и&nbsp;интерпретация электрокардиографических данных при выезде на&nbsp;дом</p>
-                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.10.006.002</h4>
+                                            <p>Внутривенное введение лекарственных средств(капельное) длительностью до 1часа</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А11.12.003.001.001</h4>
                                         </div>
                                         <div class="cost"><h3>900₽</h3></div>
                                     </div>
                                     <div class="line-price"></div>
                                     <div class="price">
                                         <div class="name-price">
-                                            <p>Регистрация соматосенсорных вызванных потенциалов коры головного мозга с&nbsp;двух сторон</p>
-                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.23.005</h4>
+                                            <p>Внутривенное введение лекарственных средств(капельное) длительностью более 1часа</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А11.12.003.001.001</h4>
                                         </div>
-                                        <div class="cost"><h3>2000₽</h3></div>
+                                        <div class="cost"><h3>1200₽</h3></div>
                                     </div>
                                     <div class="line-price"></div>
                                     <div class="price">
                                         <div class="name-price">
-                                            <p>Регистрация вызванных потенциалов коры головного мозга одной модальности (зрительные или акустические или когнитивные или стволовые) с&nbsp;двух сторон</p>
-                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.23.005.001</h4>
+                                            <p>Абдоминальная декомпрессия - 1 сеанс</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А17.30.009.001.</h4>
                                         </div>
-                                        <div class="cost"><h3>2000₽</h3></div>
+                                        <div class="cost"><h3>700₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="price_wrapper active_price" data-price="4">
+                                <h3>Прием беременных в ЖК 29</h3>
+                                <div class="allprices">
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Прием (осмотр, консультация)беременной  до 12 недель</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; В01.001.004</h4>
+                                        </div>
+                                        <div class="cost"><h3>1800₽</h3></div>
                                     </div>
                                     <div class="line-price"></div>
                                     <div class="price">
                                         <div class="name-price">
-                                            <p>Электроэнцефалограмма с&nbsp;пробами на&nbsp;ГВ и&nbsp;ФС</p>
-                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; А&nbsp;05.23.001.001</h4>
+                                            <p>Прием (осмотр, консультация)беременной после 12 недель</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; В01.001.004</h4>
                                         </div>
                                         <div class="cost"><h3>2200₽</h3></div>
                                     </div>
                                     <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Школа для беременных(психопрофилактика-1 занятие)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; В04.001.003.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>1100₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Школа для беременных (курс-5 занятий)</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; В04.001.003.002</h4>
+                                        </div>
+                                        <div class="cost"><h3>3850₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Наблюдение акушер-гинеколога по беременности (с заведением обменной карты до 20 недель), включая дистанционное сопровождение</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; В01.001.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>12000₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Наблюдение акушер-гинеколога по&nbsp;беременности (с&nbsp;заведением обменной карты после 20&nbsp;недель), включая дистанционное сопровождение</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; В01.001.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>16500₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    <div class="price">
+                                        <div class="name-price">
+                                            <p>Наблюдение акушер-гинекологом всего периода беременности и дистанционным сопровождением</p>
+                                            <h4>Код услуги по&nbsp;номенклатуре&nbsp;&mdash; В01.001.001</h4>
+                                        </div>
+                                        <div class="cost"><h3>25000₽</h3></div>
+                                    </div>
+                                    <div class="line-price"></div>
+                                    
                                 </div>
                             </div>
                         </div>

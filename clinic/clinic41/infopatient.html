@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="../css/titles.min.css">
     <link rel="stylesheet" href="../css/footerclinic.css">
     <link rel="stylesheet" href="../css/destination.min.css">
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
 
 </head>
 <body>
@@ -26,7 +28,7 @@
                 <div class="header__logo">
                     <a href="../index.html"><img src="../icons/logo.svg" alt="main_logo" class="logo"></a>
                         <div class="text__header">
-                        <div class="text__number">Городская поликлиника &#8470;&nbsp;112</div>
+                        <div class="text__number">Городская поликлиника &#8470;&nbsp;41</div>
                         <div class="text__adress">г. Санкт-Петербург, Калининский район</div>
                         </div>
                 </div>
@@ -35,7 +37,7 @@
                     <div class="header__button">
                         <button class="button__header btn free">ЗАПИСАТЬСЯ НА&nbsp;ПРИЕМ</button>
     
-                            <div class="visible__version">
+                            <div class="visible__version" id="specialButton" style="cursor: pointer;">
                                 <img src="../icons/visible.svg" alt="visible__version" class="visible">
                                 <div class="header__visible">Версия <br class="visible-br"> для слабовидящих</div>
                             </div>
@@ -154,43 +156,43 @@
                                 Контактный телефон: +7 (812) 555-10-16</p>
                         </div>
 
-                        <a target="_blank" href="documents/Права и обязанности граждан в сфере охраны здоровья.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Структура и&nbsp;органы управления</p></a>
+                        <a target="_blank" href="documents/Права и обязанности граждан в сфере охраны здоровья.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Структура и&nbsp;органы управления</p></a>
 
-                        <a target="_blank" href="documents/Правила внутреннего распорядка и поведения для пациентов.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Правила внутреннего распорядка и&nbsp;поведения для пациентов.pdf</p></a>  
+                        <a target="_blank" href="documents/Правила внутреннего распорядка и поведения для пациентов.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Правила внутреннего распорядка и&nbsp;поведения для пациентов.pdf</p></a>  
                     </div>
 
                     <div class="structure_patient">
                         <h2>Территориальная программа государственных гарантий бесплатного оказания гражданам медицинской помощи</h2>
-                        <a target="_blank" href="documents/О Программе государственных гарантий.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>О&nbsp;Программе государственных гарантий бесплатного оказания гражданам медицинской помощи на&nbsp;2023 год и&nbsp;на&nbsp;плановый период 2024 и&nbsp;2025 годов.pdf</p></a>
+                        <a target="_blank" href="documents/О Программе государственных гарантий.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>О&nbsp;Программе государственных гарантий бесплатного оказания гражданам медицинской помощи на&nbsp;2023 год и&nbsp;на&nbsp;плановый период 2024 и&nbsp;2025 годов.pdf</p></a>
                            
                     </div>
 
                     <div class="dispancer_patient">
                         <h2>Диспанцеризация</h2>
-                        <a target="_blank" href="documents/Приказ «Об организации проведения профилактических медицинских осмотров.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Приказ &laquo;Об&nbsp;организации проведения профилактических медицинских осмотров и&nbsp;диспансеризации определенных групп взрослого населения, углубленной диспансеризации граждан, перенесших новую коронавирусную инфекцию в&nbsp;поликлинических отделениях для взрослых в&nbsp;2023 году СПб ГБУЗ &laquo;Городская поликлиника &#8470;&nbsp;112&raquo;</p></a>
+                        <a target="_blank" href="documents/Приказ «Об организации проведения профилактических медицинских осмотров.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Приказ &laquo;Об&nbsp;организации проведения профилактических медицинских осмотров и&nbsp;диспансеризации определенных групп взрослого населения, углубленной диспансеризации граждан, перенесших новую коронавирусную инфекцию в&nbsp;поликлинических отделениях для взрослых в&nbsp;2023 году СПб ГБУЗ &laquo;Городская поликлиника &#8470;&nbsp;112&raquo;</p></a>
                         
-                        <a target="_blank" href="documents/Порядок осуществления диспансеризации.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Порядок осуществления диспансеризации.pdf</p></a>
+                        <a target="_blank" href="documents/Порядок осуществления диспансеризации.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Порядок осуществления диспансеризации.pdf</p></a>
 
-                        <a target="_blank" href="documents/Приказ №404н.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Приказ &#8470;&nbsp;404н об&nbsp;утверждении порядка проведения профилактического медицинского осмотра и&nbsp;диспансеризации определенных групп взрослого населения.pdf</p></a>
+                        <a target="_blank" href="documents/Приказ №404н.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Приказ &#8470;&nbsp;404н об&nbsp;утверждении порядка проведения профилактического медицинского осмотра и&nbsp;диспансеризации определенных групп взрослого населения.pdf</p></a>
 
-                        <a target="_blank" href="documents/Приказ №698н.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Приказ &#8470;&nbsp;698н об&nbsp;утверждении порядка направления граждан на&nbsp;прохождение углубленной диспансеризации, включая категории граждан, проходящих углубленную диспансеризацию в&nbsp;первоочередном порядке.pdf</p></a>
+                        <a target="_blank" href="documents/Приказ №698н.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Приказ &#8470;&nbsp;698н об&nbsp;утверждении порядка направления граждан на&nbsp;прохождение углубленной диспансеризации, включая категории граждан, проходящих углубленную диспансеризацию в&nbsp;первоочередном порядке.pdf</p></a>
 
-                        <a target="_blank" href="documents/Статья 46. Медицинские осмотры, диспансеризация.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Статья&nbsp;46. Медицинские осмотры, диспансеризация (федеральный закон об&nbsp;основах охраны здоровья граждан в&nbsp;российской федерации).pdf</p></a>
+                        <a target="_blank" href="documents/Статья 46. Медицинские осмотры, диспансеризация.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Статья&nbsp;46. Медицинские осмотры, диспансеризация (федеральный закон об&nbsp;основах охраны здоровья граждан в&nbsp;российской федерации).pdf</p></a>
 
-                        <a target="_blank" href="documents/Статья 185.1. Гарантии работникам.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Статья 185.1. Гарантии работникам при прохождении диспансеризации (трудовой кодекс РФ).pdf</p></a>
+                        <a target="_blank" href="documents/Статья 185.1. Гарантии работникам.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Статья 185.1. Гарантии работникам при прохождении диспансеризации (трудовой кодекс РФ).pdf</p></a>
                     </div>
 
                     <div class="dispancer_patient">
                         <h2>Платные услуги</h2>
-                        <a target="_blank" href="documents/Договор на оказание медицинских услуг.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Договор на&nbsp;оказание медицинских услуг.pdf</p></a>
+                        <a target="_blank" href="documents/Договор на оказание медицинских услуг.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Договор на&nbsp;оказание медицинских услуг.pdf</p></a>
                         
-                        <a target="_blank" href="documents/Цены на медицинские услуги и их перечень.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Цены на&nbsp;медицинские услуги и&nbsp;их&nbsp;перечень.pdf</p></a>
+                        <a target="_blank" href="documents/Цены на медицинские услуги и их перечень.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Цены на&nbsp;медицинские услуги и&nbsp;их&nbsp;перечень.pdf</p></a>
 
-                        <a target="_blank" href="documents/Положение о платных услугах на 2022 г. (со всеми  приложениями).pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Положение о&nbsp;платных услугах на&nbsp;2022&nbsp;г. (со&nbsp;всеми приложениями).pdf</p></a>
+                        <a target="_blank" href="documents/Положение о платных услугах на 2022 г. (со всеми  приложениями).pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Положение о&nbsp;платных услугах на&nbsp;2022&nbsp;г. (со&nbsp;всеми приложениями).pdf</p></a>
 
-                        <a target="_blank" href="documents/Сведения о медедицнских работниках.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Сведения о&nbsp;медицинских работниках.pdf</p></a>
+                        <a target="_blank" href="documents/Сведения о медедицнских работниках.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Сведения о&nbsp;медицинских работниках.pdf</p></a>
 
-                        <a target="_blank" href="documents/Приказ по платным услугам.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Приказ по&nbsp;платным услугам.pdf</p></a>
+                        <a target="_blank" href="documents/Приказ по платным услугам.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Приказ по&nbsp;платным услугам.pdf</p></a>
                     </div>
 
                 </div>
@@ -311,8 +313,8 @@
             </div>
     </section>
 
-
     <script src="../js/navigation.js"></script>
+
     
 </body>
 </html>

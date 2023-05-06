@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="../css/titles.min.css">
     <link rel="stylesheet" href="../css/footerclinic.css">
     <link rel="stylesheet" href="../css/destination.min.css">
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
 
 
 </head>
@@ -28,7 +30,7 @@
                 <div class="header__logo">
                     <a href="../index.html"><img src="../icons/logo.svg" alt="main_logo" class="logo"></a>
                         <div class="text__header">
-                        <div class="text__number">Городская поликлиника &#8470;&nbsp;112</div>
+                        <div class="text__number">Городская поликлиника &#8470;&nbsp;41</div>
                         <div class="text__adress">г. Санкт-Петербург, Калининский район</div>
                         </div>
                 </div>
@@ -37,7 +39,7 @@
                     <div class="header__button">
                         <button class="button__header btn free">ЗАПИСАТЬСЯ НА&nbsp;ПРИЕМ</button>
     
-                            <div class="visible__version">
+                            <div class="visible__version" id="specialButton" style="cursor: pointer;">
                                 <img src="../icons/visible.svg" alt="visible__version" class="visible">
                                 <div class="header__visible">Версия <br class="visible-br"> для слабовидящих</div>
                             </div>
@@ -127,6 +129,16 @@
                         <h1>Отзывы пациентов</h1>
                     </div>
                     <div class="units_contact">
+                        <div class="rev-person">
+                            <div class="rev-item">
+                                <div class="rev-data">
+                                    <h3>20.02.2023</h3>
+                                    <h3>Наталья Небольсина</h3>
+                                </div>
+                                <p>К&nbsp;счастью редко обращалась к&nbsp;врачам. У&nbsp;меня осталось хорошее впечатление. А&nbsp;вот у&nbsp;моих хороших знакомых впечатление другое. Огромные очереди к&nbsp;специалистам даже по&nbsp;записи через интернет. Не&nbsp;хватает даже терапевтов. Рядом с&nbsp;поликлиникой строят огромный жилой район. Мы&nbsp;с&nbsp;ужасом думаем&quot;а чего нам ожидать дальше?&quot; Когда дома заселят наша поликлиника лопнет от&nbsp;такого колличества людей. Понятно, что качество обслуживания явно не&nbsp;повысится. Не&nbsp;буду писать номер участка, но&nbsp;медсестра берет взятки. Ну&nbsp;что&nbsp;же , в&nbsp;этом виноваты сами больные. И&nbsp;вообще, за&nbsp;последнее время в&nbsp;нашей поликлинике мало что изменилось. Всё как раньше. Обновление прошло стороной.</p>
+                            </div>
+                            
+                        </div>
                         <div class="unit-rev">
                             <h2>Оставьте ваш отзыв:</h2>
                             <form action="" class="unit__form">
@@ -152,17 +164,6 @@
                                 </div>
                                 <button class="review_btn">ОТПРАВИТЬ</button>
                             </form>
-                        </div>
-                        <div class="rev-person">
-                            <h2>Отзывы:</h2>
-                            <div class="rev-item">
-                                <div class="rev-data">
-                                    <h3>20.02.2023</h3>
-                                    <h3>Наталья Небольсина</h3>
-                                </div>
-                                <p>К&nbsp;счастью редко обращалась к&nbsp;врачам. У&nbsp;меня осталось хорошее впечатление. А&nbsp;вот у&nbsp;моих хороших знакомых впечатление другое. Огромные очереди к&nbsp;специалистам даже по&nbsp;записи через интернет. Не&nbsp;хватает даже терапевтов. Рядом с&nbsp;поликлиникой строят огромный жилой район. Мы&nbsp;с&nbsp;ужасом думаем&quot;а чего нам ожидать дальше?&quot; Когда дома заселят наша поликлиника лопнет от&nbsp;такого колличества людей. Понятно, что качество обслуживания явно не&nbsp;повысится. Не&nbsp;буду писать номер участка, но&nbsp;медсестра берет взятки. Ну&nbsp;что&nbsp;же , в&nbsp;этом виноваты сами больные. И&nbsp;вообще, за&nbsp;последнее время в&nbsp;нашей поликлинике мало что изменилось. Всё как раньше. Обновление прошло стороной.</p>
-                            </div>
-                            
                         </div>
                     </div>
 

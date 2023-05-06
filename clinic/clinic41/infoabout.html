@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="../css/titles.min.css">
     <link rel="stylesheet" href="../css/footerclinic.css">
     <link rel="stylesheet" href="../css/destination.min.css">
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
 
 </head>
 <body>
@@ -26,7 +28,7 @@
                 <div class="header__logo">
                     <a href="../index.html"><img src="../icons/logo.svg" alt="main_logo" class="logo"></a>
                         <div class="text__header">
-                        <div class="text__number">Городская поликлиника &#8470;&nbsp;112</div>
+                        <div class="text__number">Городская поликлиника &#8470;&nbsp;41</div>
                         <div class="text__adress">г. Санкт-Петербург, Калининский район</div>
                         </div>
                 </div>
@@ -35,7 +37,7 @@
                     <div class="header__button">
                         <button class="button__header btn free">ЗАПИСАТЬСЯ НА&nbsp;ПРИЕМ</button>
     
-                            <div class="visible__version">
+                            <div class="visible__version" id="specialButton" style="cursor: pointer;">
                                 <img src="../icons/visible.svg" alt="visible__version" class="visible">
                                 <div class="header__visible">Версия <br class="visible-br"> для слабовидящих</div>
                             </div>
@@ -131,37 +133,37 @@
                             <h2>Структурные подразделения</h2>
                             <h3>Поликлиника &#8470;&nbsp;112</h3>
                             <p>195427, Санкт-Петербург, ул. Ак. Байкова, д.&nbsp;25, корп.&nbsp;1 <br>Справочная: 241-29-49</p>
-                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A876ba5147ba731ff078a6a56fd93277bc885909e02646e33cd88ea87c9e3d85c&amp;width=660&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+                            <img src="./clinic_img/112 полка.jpg" alt="путь до 112" class="mapway">
                         </div>
 
                         <div class="unit-info">
                             <h3>Поликлиническое отделение &#8470;&nbsp;55</h3>
                             <p>195220, Санкт-Петербург, ул. Гжатская, д.&nbsp;3, лит. А <br>Справочная: 241-30-01</p>
-                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A876ba5147ba731ff078a6a56fd93277bc885909e02646e33cd88ea87c9e3d85c&amp;width=660&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+                            <img src="./clinic_img/55 полка.jpg" alt="путь до 55" class="mapway">
                         </div>
 
                         <div class="unit-info">
                             <h3>Поликлиническое отделение &#8470;&nbsp;41</h3>
                             <p>195273, Санкт-Петербург, пр. Науки, д.&nbsp;71, корп.2 <br> Справочная: 241-29-48</p>
-                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A876ba5147ba731ff078a6a56fd93277bc885909e02646e33cd88ea87c9e3d85c&amp;width=660&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+                            <img src="./clinic_img/41 полка.jpg" alt="путь до 41" class="mapway">
                         </div>
 
                         <div class="unit-info">
                             <h3>Женская консультация &#8470;&nbsp;29</h3>
                             <p>195257, Санкт-Петербург, пр. Науки, д.12, корп.&nbsp;4, лит. А <br> Справочная: 533-17-68</p>
-                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A876ba5147ba731ff078a6a56fd93277bc885909e02646e33cd88ea87c9e3d85c&amp;width=660&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+                            <img src="./clinic_img/женская.jpg" alt="женская консультация" class="mapway">
                         </div>
 
                         <div class="unit-info">
                             <h3>Консультативно-диагностический центр</h3>
                             <p>195297, Санкт-Петербург, ул. Тимуровская, д.&nbsp;17, корп.&nbsp;3 <br> Справочная: 241-31-71</p>
-                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A876ba5147ba731ff078a6a56fd93277bc885909e02646e33cd88ea87c9e3d85c&amp;width=660&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+                            <img src="./clinic_img/кдц.jpg" alt="кдц" class="mapway">
                         </div>
 
                         <div class="unit-info">
                             <h3>Отделение скорой медицинской помощи</h3>
                             <p>195256, Санкт-Петербург, ул. Карпинского, д.&nbsp;16 <br> Справочная: 299-62-53 </p>
-                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A876ba5147ba731ff078a6a56fd93277bc885909e02646e33cd88ea87c9e3d85c&amp;width=660&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+                            <img src="./clinic_img/скорая.jpg" alt="скорая" class="mapway">
                         </div>
                         
                     </div>
@@ -182,7 +184,7 @@
                     <div class="structure">
                         <h2>Структура организации</h2>
                         <p>Учредители: город Санкт-Петербург в&nbsp;лице КУГИ и&nbsp;администрация Калининского района Санкт-Петербурга</p>
-                        <a target="_blank" href="documents/Struktura_i_organy_upravlenia.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Структура и&nbsp;органы управления</p></a>
+                        <a target="_blank" href="documents/Struktura_i_organy_upravlenia.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Структура и&nbsp;органы управления</p></a>
                         <h3>Руководители</h3>
                         <div class="employes">
                             <p>Главный врач: Власов Дмитрий Александрович</p>
@@ -213,10 +215,10 @@
                             <p>Выдана комитетом по&nbsp;здравоохранению&nbsp;г. Санкт-Петербурга в&nbsp;лице председателя Лисовца Дмитрия Геннадьевича</p>
                             <p>191023, г. Санкт-Петербург, ул. Садовая&nbsp;М., д.&nbsp;1, тел. 246-6979</p>
                             <div class="documents-info">
-                                <a target="_blank" href="documents/Лицензия № ЛО-78-01-011077 от 26.08.2020.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Лицензия ЛО-78-01-011077_от_26.08.2020.pdf</p></a>
-                                <a target="_blank" href="documents/Приложение к Лицензии.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Приложение к Лицензии.pdf</p></a>
-                                <a target="_blank" href="documents/Перечень услуг в соответствии с лицензией.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Перечень услуг в соответствии с лицензией.pdf</p></a>
-                                <a target="_blank" href="documents/Государственное задание ГП №112 на 2022-2024.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Государственное задание ГП_112_на_2022-2024.pdf</p></a>
+                                <a target="_blank" href="documents/Лицензия № ЛО-78-01-011077 от 26.08.2020.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Лицензия ЛО-78-01-011077_от_26.08.2020.pdf</p></a>
+                                <a target="_blank" href="documents/Приложение к Лицензии.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Приложение к Лицензии.pdf</p></a>
+                                <a target="_blank" href="documents/Перечень услуг в соответствии с лицензией.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Перечень услуг в соответствии с лицензией.pdf</p></a>
+                                <a target="_blank" href="documents/Государственное задание ГП №112 на 2022-2024.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Государственное задание ГП_112_на_2022-2024.pdf</p></a>
                             </div>
                             
                         </div>
@@ -337,8 +339,11 @@
             </div>
     </section>
 
+    
 
     <script src="../js/navigation.js"></script>
+
+
     
 </body>
 </html>

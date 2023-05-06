@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="../css/titles.min.css">
     <link rel="stylesheet" href="../css/footerclinic.css">
     <link rel="stylesheet" href="../css/destination.min.css">
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
 
 </head>
 <body>
@@ -26,7 +28,7 @@
                 <div class="header__logo">
                     <a href="../index.html"><img src="../icons/logo.svg" alt="main_logo" class="logo"></a>
                         <div class="text__header">
-                        <div class="text__number">Городская поликлиника &#8470;&nbsp;112</div>
+                        <div class="text__number">Городская поликлиника &#8470;&nbsp;41</div>
                         <div class="text__adress">г. Санкт-Петербург, Калининский район</div>
                         </div>
                 </div>
@@ -35,7 +37,7 @@
                     <div class="header__button">
                         <button class="button__header btn free">ЗАПИСАТЬСЯ НА&nbsp;ПРИЕМ</button>
     
-                            <div class="visible__version">
+                            <div class="visible__version" id="specialButton" style="cursor: pointer;">
                                 <img src="../icons/visible.svg" alt="visible__version" class="visible">
                                 <div class="header__visible">Версия <br class="visible-br"> для слабовидящих</div>
                             </div>
@@ -126,19 +128,19 @@
                     </div>
                     
                     <div class="dispancer_patient">
-                        <a target="_blank" href="documents/Перечень жизненно необходимых и важнейших лекарственных препаратов.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Перечень жизненно необходимых и&nbsp;важнейших лекарственных препаратов для медицинского применения.pdf</p></a>
+                        <a target="_blank" href="documents/Перечень жизненно необходимых и важнейших лекарственных препаратов.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Перечень жизненно необходимых и&nbsp;важнейших лекарственных препаратов для медицинского применения.pdf</p></a>
                         
-                        <a target="_blank" href="documents/Перечень лекарственных препаратов, предназначенных для обеспечения лиц, больных гемофилией, муковисцидозом.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Перечень лекарственных препаратов, предназначенных для обеспечения лиц, больных гемофилией, муковисцидозом, гипофизарным нанизмом, болезнью Гоше, злокачественными новообразованиями лимфоидной, кроветворной и&nbsp;родственных им&nbsp;тканей, рассеянным склерозом, а&nbsp;также лиц после трансплантации органов&nbsp;и (или) тканей</p></a>
+                        <a target="_blank" href="documents/Перечень лекарственных препаратов, предназначенных для обеспечения лиц, больных гемофилией, муковисцидозом.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Перечень лекарственных препаратов, предназначенных для обеспечения лиц, больных гемофилией, муковисцидозом, гипофизарным нанизмом, болезнью Гоше, злокачественными новообразованиями лимфоидной, кроветворной и&nbsp;родственных им&nbsp;тканей, рассеянным склерозом, а&nbsp;также лиц после трансплантации органов&nbsp;и (или) тканей</p></a>
 
-                        <a target="_blank" href="documents/Перечень лекарственных препаратов для медицинского применения.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Перечень лекарственных препаратов для медицинского применения, в&nbsp;том числе лекарственных препаратов для медицинского применения, назначаемых по&nbsp;решению врачебных комиссий медицинских организ.pdf</p></a>
+                        <a target="_blank" href="documents/Перечень лекарственных препаратов для медицинского применения.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Перечень лекарственных препаратов для медицинского применения, в&nbsp;том числе лекарственных препаратов для медицинского применения, назначаемых по&nbsp;решению врачебных комиссий медицинских организ.pdf</p></a>
 
-                        <a target="_blank" href="documents/Перечень лекарственных препаратов, отпускаемых населению.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Перечень лекарственных препаратов, отпускаемых населению в&nbsp;соответствии с&nbsp;Перечнем групп населения и&nbsp;категорий заболеваний, при амбулаторном лечении которых лекарственные средства и&nbsp;изделия медицинского назначения отпускаются по&nbsp;рецептам врачей бесплатно, а&nbsp;также в&nbsp;соответствии с&nbsp;Перечнем групп населения, при амбулаторном лечении которых лекарственные средства отпускаются по&nbsp;рецептам врачей с&nbsp;пятидесятипроцентной скидкой</p></a>
+                        <a target="_blank" href="documents/Перечень лекарственных препаратов, отпускаемых населению.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Перечень лекарственных препаратов, отпускаемых населению в&nbsp;соответствии с&nbsp;Перечнем групп населения и&nbsp;категорий заболеваний, при амбулаторном лечении которых лекарственные средства и&nbsp;изделия медицинского назначения отпускаются по&nbsp;рецептам врачей бесплатно, а&nbsp;также в&nbsp;соответствии с&nbsp;Перечнем групп населения, при амбулаторном лечении которых лекарственные средства отпускаются по&nbsp;рецептам врачей с&nbsp;пятидесятипроцентной скидкой</p></a>
 
-                        <a target="_blank" href="documents/Об отпуске лекарственных препаратов больным, страдающим онкологическими заболеваниями.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Об&nbsp;отпуске лекарственных препаратов больным, страдающим онкологическими заболеваниями.pdf</p></a>
+                        <a target="_blank" href="documents/Об отпуске лекарственных препаратов больным, страдающим онкологическими заболеваниями.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Об&nbsp;отпуске лекарственных препаратов больным, страдающим онкологическими заболеваниями.pdf</p></a>
 
-                        <a target="_blank" href="documents/Перечень лекарственных препаратов, закупаемых засчетсредств бюджета.pdf" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Перечень лекарственных препаратов, закупаемых засчетсредств бюджета Санкт-Петербурга, на&nbsp;которые &laquo;федеральным льготникам&raquo; оформляются рецепты с&nbsp;кодом категории гражданина &quot;905&quot;.pdf</p></a>
+                        <a target="_blank" href="documents/Перечень лекарственных препаратов, закупаемых засчетсредств бюджета.pdf" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Перечень лекарственных препаратов, закупаемых засчетсредств бюджета Санкт-Петербурга, на&nbsp;которые &laquo;федеральным льготникам&raquo; оформляются рецепты с&nbsp;кодом категории гражданина &quot;905&quot;.pdf</p></a>
 
-                        <a target="_blank" href="documents/Перечень лекарственных препаратов и медицинских изделий, предусмотренных к закупке.xlsx" class="link-info"><img src="../icons/Group.svg" alt="doc" class="icon-info"> <p>Перечень лекарственных препаратов и&nbsp;медицинских изделий, предусмотренных к&nbsp;закупке в&nbsp;2022 году для обеспечения отдельных категорий граждан.xlsx</p></a>
+                        <a target="_blank" href="documents/Перечень лекарственных препаратов и медицинских изделий, предусмотренных к закупке.xlsx" class="link-info"><img src="../icons/docicon.svg" alt="doc" class="icon-info"> <p>Перечень лекарственных препаратов и&nbsp;медицинских изделий, предусмотренных к&nbsp;закупке в&nbsp;2022 году для обеспечения отдельных категорий граждан.xlsx</p></a>
                     </div>
 
                 </div>

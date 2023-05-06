@@ -87,17 +87,21 @@
             p
                 position: relative
                 width: fit-content
-                &::after
-                    content: " "
-                    position: absolute
-                    bottom: 0
-                    left: 0
-                    width: 0%
-                    height: 1px
-                    background-color: #111111
-                    transition: 0.3s all
-                &:hover::after
+                // &::after
+                //     content: " "
+                //     position: absolute
+                //     bottom: 0
+                //     left: 0
+                //     width: 0%
+                //     height: 1px
+                //     background-color: #111111
+                //     transition: 0.3s all
+                // &:hover::after
+                //     width: 100%
+                &:hover
                     width: 100%
+                    transform: scale(1.02)
+                    color: #000000
                 
 
 

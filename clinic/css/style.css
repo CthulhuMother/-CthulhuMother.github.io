@@ -41,12 +41,12 @@
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 25px;
     color: #000000;
 }
 
 .text__adress{
-    margin-top: 5px;
+    margin-top: 10px;
     font-family: 'Futura PT book';
     font-style: normal;
     font-weight: 400;
@@ -61,7 +61,7 @@
 }
 
 .text__header{
-    margin-left: 24px;
+    margin-left: 20px;
 
 }
 
@@ -113,8 +113,8 @@
 }
 
 .logo{
-    width: 74px;
-    height: 77px;
+    width: 88px;
+    height: 78px;
 }
 
 .promo {

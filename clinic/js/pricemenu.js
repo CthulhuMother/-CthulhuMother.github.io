@@ -2,7 +2,8 @@ let options = document.querySelectorAll("option"),
     prices = document.querySelectorAll(".price_wrapper"),
     input = document.querySelector(".selection__value"),
     dlist = document.getElementById("directions").childNodes;
-    clearlist = document.querySelector(".clean");
+    clearlist = document.querySelector(".clean"),
+    tmp = document.querySelector(".selection__value");
 
     
 input.addEventListener("change", () => {
@@ -26,11 +27,20 @@ input.addEventListener("change", () => {
         }
     }
 })
-clearlist.addEventListener("click", () => {
-    console.log(1);
-    input.value = "";
-    prices.forEach(el => {
-        el.classList.remove("active-price");//скрывает
-    });
+// clearlist.addEventListener("click", () => {
+//     console.log(1);
+//     input.value = "";
+//     prices.forEach(el => {
+//         el.classList.remove("active-price");//скрывает
+//     });
+// })
+tmp.addEventListener("click", () => {
+    if(tmp.value != ""){
+        tmp.value = "";
+
+        prices.forEach(el => {
+            el.classList.remove("active-price");//скрывает
+        });
+    }
 })
 
