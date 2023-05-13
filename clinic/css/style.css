@@ -321,7 +321,7 @@
     position: relative;
     width: fit-content;
 }
-.footer__text::after{
+/* .footer__text::after{
     content: " ";
     width: 0;
     position: absolute;
@@ -333,6 +333,11 @@
 }
 .footer__text:hover::after{
     width: 100%;
+} */
+
+.footer__text:hover{
+    transform: scale(1.02);
+    color: #000000;
 }
 
 .footer__wrapper{
