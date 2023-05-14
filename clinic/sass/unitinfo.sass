@@ -404,7 +404,7 @@
     display: flex
     margin-top: 60px
     .photonews
-        width: 30%
+        max-width: 30%
         margin-right: 20px
     .news-text
         p
@@ -717,6 +717,29 @@
         .review
             width: 100%
             box-sizing: border-box
+    
+    .unit-news
+        display: flex
+        flex-wrap: wrap
+        margin-top: 40px
+        .photonews
+            width: 100%
+            margin-right: 20px
+            height: 100px
+            max-width: 100%
+            object-fit: cover
+            border-radius: 10px 10px 0px 0px 
+        .news-text
+            margin-top: 20px
+            p
+                margin-top: 15px
+            .more
+                display: flex
+                align-items: center
+                .more__info
+                    margin-top: 8px
+                .next
+                    margin-top: 12px
 
 @media (max-width: 411px)
     .define 
