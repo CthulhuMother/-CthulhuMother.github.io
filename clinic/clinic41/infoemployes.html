@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../css/destination.min.css">
     <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
     <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+    <link rel="stylesheet" href="../css/popup.min.css">
 
 </head>
 <body>
@@ -248,6 +249,60 @@
                 </div>
             </div>
     </section>
+
+    <section class="popup">
+        <div class="popup__info">
+            <img src="../icons/close_FILL0_wght400_GRAD0_opsz48 (3).svg" alt="" class="closepopup quit">
+            <div class="popup__text">
+                <h2>Как вы&nbsp;хотите записаться на&nbsp;прием?</h2>
+                <p>Выберите способ записи на&nbsp;прием:</p>
+                <div class="popup__buttons">
+                    <button onClick="window.location=''"class="btn btnOMS">ПО&nbsp;ОМС*</button>
+                    <button class="btn btnpay">ПЛАТНЫЙ ПРИЕМ</button>
+                </div>
+                <h4>*Вы&nbsp;будете переведены на&nbsp;сайт, с&nbsp;помощью которого сможете <br>записаться на&nbsp;прием самостоятельно</h4>
+                
+            </div>
+        </div>
+
+        <div class="popup__reg">
+            <img src="../icons/close_FILL0_wght400_GRAD0_opsz48 (3).svg" alt="" class="closepopup1 quit">
+            <div class="popup_reg">
+                <h2>Запись на&nbsp;платный прием</h2>
+                <h3>Оставьте заявку, и&nbsp;мы&nbsp;вам перезвоним:</h3>
+                <form action="" class="popup__form">
+                    <div class="popup-item">
+                        <p>Введите ФИО:</p>
+                        <input type="text" class="popupreg">
+                    </div>
+                    <div class="popup-item">
+                        <p>Номер телефона:</p>
+                        <input type="text" name="mail" class="popupreg">
+                    </div>
+                    <div class="popup-item">
+                        <p>Комментарий:</p>
+                        <textarea name="comment" resizable="false" class="popupreg popup_text"></textarea>
+                    </div>
+                    <div class="popup-item agree-item">
+                        <input type="checkbox" class="agree">
+                        <p>Согласен на&nbsp;обработку персональных данных</p>
+                    </div>
+                    <button class="btn send">ОТПРАВИТЬ ЗАЯВКУ</button>
+                </form>
+                
+            </div>
+        </div>
+        <div class="popup__accept">
+            <img src="../icons/close_FILL0_wght400_GRAD0_opsz48 (3).svg" alt="" class="closepopup3 quit">
+            <div class="popup__text">
+                <h2>Ваша заявка отправлена!</h2>
+                <p>Скоро с&nbsp;вами свяжется наш оператор</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/correctpopup.js"></script>
 
 
     <script src="../js/navigation.js"></script>
